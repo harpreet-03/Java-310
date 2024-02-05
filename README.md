@@ -49,5 +49,4 @@ Before diving into Java, it's essential to understand version control. Learn the
 ## Contributors
 <h2>
 Harpreet Singh
-Lovely Professional University 
 </h2>
