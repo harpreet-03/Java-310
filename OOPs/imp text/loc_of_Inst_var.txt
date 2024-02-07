@@ -8,12 +8,12 @@ how exectuon of instance varibale in java happens:
 - Instance variables are declared within a class, but outside of any methods or blocks.
 - They can be initialized with default values or specific values at declaration:
 
-```java
+java
 class Car {
     private String model; // Default value: null
     private int year = 2023; // Initialized with 2023
 }
-```
+
 
 **2. Object Creation:**
 
