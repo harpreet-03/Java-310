@@ -1,3 +1,4 @@
+package Encapsulation;
 
 /*
  *-> Encapsulation: It is a process of wrapping data members and member functions together into a single unit.
@@ -18,7 +19,7 @@ class Account {
     private int phone = 1234567890;
 
     public int getAccbalance() {
-        return accbalance;
+        return this.accbalance;
     }
 
     public void setAccBalance(int val) {
@@ -72,7 +73,7 @@ class Encapsulation {
         // System.out.println("Account Number: "+a1.accNumber);
 
         // when all instance variables are private: we can't access
-
+        System.out.println("--------------------------------------");
         System.out.println("Old Account Name: " + a1.getAccName());
         System.out.println("Old Account Balance: " + a1.getAccbalance());
         System.out.println("Old Account Number: " + a1.getAccNumber());
@@ -85,12 +86,12 @@ class Encapsulation {
         a1.setAccNumber(164513);
         a1.setEmail("harpreet@123.in");
         a1.setPhone(746224407);
-
+        System.out.println("--------------------------------------");
         System.out.println("New Account Name: " + a1.getAccName());
         System.out.println("Old Account Balance: " + a1.getAccbalance());
         System.out.println("New Account Number: " + a1.getAccNumber());
         System.out.println("New Email: " + a1.getEmail());
         System.out.println("New Phone: " + a1.getPhone());
-
+        System.out.println("--------------------------------------");
     }
 }

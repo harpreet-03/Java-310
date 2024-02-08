@@ -1,0 +1,100 @@
+Important terms: 
+
+1 . we can write public and static keyowrd in the main mthd or any other mthd interchangeably
+
+eg:
+public static void main() {}
+
+and
+
+static public void main() {}
+>>>>>> both above code canrun without any error
+
+
+int static public main() {}
+>>>>>> above code cannot run
+
+
+-----------------------------------------------------------------------------------------------
+
+-> static Keyword: 
+
+Definition: 
+
+Static:** When applied to a variable, it makes the variable belong to the class rather than to instances of the class. There is only one copy of a static variable that is shared among all instances of the class.
+
+-> static int sharedVariable = 10;
+
+Instance variable:** 
+-Instance variables are shared by all instances of the class
+-can be accessed by any instance of the class
+
+
+
+Q1: Difference between static and instance variables
+
+    - Static variable 
+        - Shared by all the instances of the class.
+        - Can be accessed directly using class name.
+        - Only one copy exists regardless the number of instances of the class.
+    
+    -Instance Variables
+        - Each instance has its own copy.
+        - Can be accessed through class instance.
+        - Each object will have its own copy of the instance variable.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q2: why static method cannot process non static methods/variables.
+
+
+Static methods in Java are associated with the class itself rather than with any particular instance of the class. This means that they can be called without needing to create an instance of the class. However, because static methods are not tied to any specific instance, they cannot access instance variables or instance methods directly.
+
+Instance variables and methods are properties and behaviors that are specific to individual instances (objects) of a class. Each object created from a class has its own set of instance variables, and instance methods can operate on these variables. Since static methods do not have access to any specific instance, they cannot directly access instance variables or instance methods.
+
+To access instance variables or methods from within a static method, you would need to either pass an instance of the class as a parameter to the static method or create a new instance of the class within the static method.
+
+
+
+public class MyClass {
+    static int staticVariable = 10;
+    int instanceVariable = 20;
+
+    public static void staticMethod() {
+        // Static method can access only static variables
+        System.out.println("Static variable: " + staticVariable);
+
+        // This will cause a compilation error because staticMethod() cannot access instanceVariable directly
+        // System.out.println("Instance variable: " + instanceVariable);
+    }
+
+    public void instanceMethod() {
+        // Instance method can access both static and instance variables
+        System.out.println("Static variable: " + staticVariable);
+        System.out.println("Instance variable: " + instanceVariable);
+    }
+
+    public static void main(String[] args) {
+        staticMethod(); // Call static method directly
+        MyClass myObject = new MyClass();
+        myObject.instanceMethod(); // Call instance method using an object
+    }
+}
+
+
+In this example, staticMethod() cannot access instanceVariable directly, but instanceMethod() can access both staticVariable and instanceVariable.
+
+
+
+
