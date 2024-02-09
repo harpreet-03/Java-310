@@ -65,7 +65,7 @@ public class Student_Marksheet {
         for (double grade : grades) {
             sum += grade;
         }
-        double average = sum / grades.size();
+        double average = (int)(sum / grades.size());
         System.out.println("Average: " + average);
         
         System.out.println("---------------------------");
