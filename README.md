@@ -1,5 +1,5 @@
-<h1>
-Java Programming: CSE310: 
+<h1 >
+Java Programming:> CSE310
 </h1>
 Welcome to the Java Programming Tutorial! This comprehensive guide is designed to take you from a beginner to an advanced Java developer, with a mentorship approach. As you progress through the tutorial, you will not only learn the fundamentals of Java programming but also gain hands-on experience by working on daily exercises. 
 
@@ -48,5 +48,7 @@ Before diving into Java, it's essential to understand version control. Learn the
 
 ## Contributors
 <h2>
+<i>
 Harpreet Singh
+</i>
 </h2>
