@@ -1,0 +1,39 @@
+copy constructor: 
+
+A copy constructor is a special member function in object-oriented programming languages like C++ and Java that initializes an object as a copy of an existing object. It's particularly useful when you want to create a new object that is a duplicate of another object.
+
+Thers's not copy constructor in Java: : ::: : 
+
+
+In Java, unlike in C++, there's no explicit copy constructor like the one you see in C++. However, you can achieve similar functionality by creating a constructor or a static factory method that takes an instance of the same class as an argument and initializes the new object with the values from the passed object.
+
+class Person{
+
+    //copy constructor 
+    public Person(Person p) {
+        this.name = p.name;
+        this.age = p.age;
+        this.mob = p.mob;
+    }
+}
+
+In the above code, we have a class named "Person" with three private instance variables - name, age and mob. The class also has a copy constructor that takes an object of the same class as an argument and initializes the new object with the values from the passed object and copies the instance into the passed object with the values from the passed object with the values from the passed object with
+
+Main() {
+    Person p4 = new Person(p1);
+
+    System.out.println("-----Copy Constructor------");
+        System.out.println(p4.name);
+        System.out.println(p4.age);
+        System.out.println(p4.mob);
+        System.out.println("---------------------------");
+        
+}
+
+//output: 
+
+-----Copy Constructor------
+Harpreet Singh
+19
+7696224478
+---------------------------

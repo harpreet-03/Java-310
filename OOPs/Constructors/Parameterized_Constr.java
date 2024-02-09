@@ -17,6 +17,7 @@ class Person {
         System.out.println("Default constructor called");
     }
 
+    // Copy Constructor: 
     public Person(Person p) {
         this.name = p.name;
         this.age = p.age;
@@ -34,13 +35,15 @@ public class Parameterized_Constr {
         Person p1 = new Person("Harpreet Singh", 19, 7696224478L);
         Person p2 = new Person();
         Person p3 = new Person();
+
         Person p4 = new Person(p1);
+        
 
         System.out.println("---------------------------");
         p1.display();
         System.out.println("---------------------------");
         System.out.println();
-        
+
         System.out.println("-----Copy Constructor------");
         System.out.println(p4.name);
         System.out.println(p4.age);
