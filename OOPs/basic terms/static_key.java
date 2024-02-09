@@ -18,7 +18,7 @@ class Student {
 public class static_key {
     public static void main(String args[]) {
         Student s1 = new Student();
-        s1.name = "Aanand";
+        s1.name = "Aanand"; 
         s1.id = 1;
         s1.uniName = "LPU";
 
@@ -29,6 +29,8 @@ public class static_key {
 
         s1.output();
         s2.output();
+
+        Student.myStaticMethod(); // static method accessible using its Class
         
         }
 }

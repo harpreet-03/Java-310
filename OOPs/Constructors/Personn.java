@@ -3,8 +3,8 @@ class IPerson{
     public String name;
     public int age = 13;
 
-    // It is a mthd that have same name as class name
     //constructor doesnot have a return type
+    // It is a mthd that have same name as class name
     //It'll called automatically when object is created 
 
     // Default constructor: 

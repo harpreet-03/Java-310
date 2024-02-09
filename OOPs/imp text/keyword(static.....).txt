@@ -45,17 +45,6 @@ Q1: Difference between static and instance variables
  
 
 
-
-
-
-
-
-
-
-
-
-
-
 Q2: why static method cannot process non static methods/variables.
 
 
