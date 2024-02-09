@@ -10,7 +10,7 @@ class Person {
         this.age = age;
         this.mob = mob;
 
-        System.out.println("Parametrized constructor called");
+        System.out.println("\nParametrized constructor called");
     }
 
     public Person() {

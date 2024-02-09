@@ -63,8 +63,9 @@ class RentalSystem {
 
     public double calculateMileage(double distanceTraveled, double fuelConsumed) {
         if (fuelConsumed <= 0 || distanceTraveled <= 0) {
-            return 0; // Avoid division by zero
+            return 0; 
         }
+
         return distanceTraveled / fuelConsumed;
     }
 }
@@ -79,8 +80,8 @@ public class CarRentSystem {
         System.out.println("\nModel: " + car1.getModel());
         System.out.println("Color: " + car1.getColor());
         System.out.println("Year: " + car1.getYear());
-        System.out.println("Rental Status: " + car1.isRentalStatus());
         System.out.println("Mileage: " + car1Mileage);
+        System.out.println("Rental Status: " + car1.isRentalStatus());
         System.out.println("---------------------------");
 
 
@@ -95,7 +96,7 @@ public class CarRentSystem {
         System.out.println("Mileage: " + car2Mileage);
         System.out.println("Rental Status: " + car2.isRentalStatus());
         System.out.println("---------------------------");
-
+        
         RentalSystem car3 = new RentalSystem("Audi", "Red", "2021", 18.5, true);
         double car3Mileage = car3.calculateMileage(350, 20); // Assuming car3 traveled 350 miles and consumed 20 gallons of fuel
 
