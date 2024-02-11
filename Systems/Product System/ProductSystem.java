@@ -78,6 +78,10 @@ class Inventory {
         products.add(product);
     }
 
+    public void removeProduct(Product product) {
+        products.remove(product);
+    }
+
     public Product getProductById(int productId) {
         for (Product product : products) {
             if (product.getProductId() == productId) {
@@ -85,10 +89,6 @@ class Inventory {
             }
         }
         return null;
-    }
-
-    public void removeProduct(Product product) {
-        products.remove(product);
     }
 
     public void updateProductQuantity(int productId, int newQuantity) {
