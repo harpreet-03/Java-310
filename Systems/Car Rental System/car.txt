@@ -1,0 +1,53 @@
+Great! Here's the implementation in bullet points:
+
+**Car:**
+- Private attributes: ID, make, model, year, type, fuel type, transmission type, mileage, daily rate, availability status, location.
+- Public methods:
+  - Constructors: Default, custom.
+  - Getters and setters for all attributes.
+  - `calculateRentalCost(rentalDays)`: Calculates total rental cost.
+  - `markRented(branchID)`: Updates availability status and location upon renting.
+  - `markReturned(branchID)`: Updates availability status and location upon returning.
+
+**Customer:**
+- Private attributes: ID, name, address, phone number, driver's license number, rental history.
+- Public methods:
+  - Constructors: Default, custom.
+  - Getters and setters for all attributes.
+  - `rentCar(carID, branchID, rentalDays)`: Initiates car rental.
+  - `returnCar(carID, branchID)`: Finalizes rental.
+  - `viewRentalHistory()`: Displays past rental information.
+
+**RentalOrder:**
+- Private attributes: ID, car, customer, rentalStart, rentalEnd, totalCost, status.
+- Public methods:
+  - Constructor.
+  - Getters and setters for all attributes.
+  - `calculateCost()`: Determines rental cost.
+  - `markCompleted()`: Updates status and car availability upon car return.
+  - `markCanceled()`: Updates status and car availability if rental is canceled.
+
+**Branch:**
+- Private attributes: ID, location, inventory.
+- Public methods:
+  - Constructors: Default, custom.
+  - Getters and setters for all attributes.
+  - `searchCar(type, fuelType, transmissionType)`: Searches for available cars.
+  - `getAvailableCars()`: Returns list of available cars.
+  - `rentCar(customerID, carID)`: Facilitates car rental.
+  - `returnCar(carID)`: Updates car availability and RentalOrder status upon return.
+
+**CarRentalSystem:**
+- Overall system management:
+  - Maintains list of branches and customers.
+  - Provides login/registration functionality for customers.
+  - Offers car search and rental initiation mechanisms.
+  - Handles car returns and manages rental orders.
+  - Generates reports (e.g., revenue, rental statistics).
+
+**Implementation Guidelines:**
+- Adhere to object-oriented design principles.
+- Apply input validation and exception handling.
+- Prioritize code readability, maintainability, and extensibility.
+- Test code thoroughly.
+
