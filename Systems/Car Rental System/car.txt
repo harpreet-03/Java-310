@@ -18,7 +18,7 @@ Great! Here's the implementation in bullet points:
   - `returnCar(carID, branchID)`: Finalizes rental.
   - `viewRentalHistory()`: Displays past rental information.
 
-**RentalOrder:**
+-> RentalOrder:**
 - Private attributes: ID, car, customer, rentalStart, rentalEnd, totalCost, status.
 - Public methods:
   - Constructor.
@@ -27,7 +27,7 @@ Great! Here's the implementation in bullet points:
   - `markCompleted()`: Updates status and car availability upon car return.
   - `markCanceled()`: Updates status and car availability if rental is canceled.
 
-**Branch:**
+-> Branch:
 - Private attributes: ID, location, inventory.
 - Public methods:
   - Constructors: Default, custom.
