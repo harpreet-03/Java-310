@@ -41,10 +41,8 @@ Welcome to the Java Programming Tutorial! This comprehensive guide is designed t
 ## Getting Started
 
 ### Setting up your development environment
-Make sure you have Java Development Kit (JDK) installed on your machine. You can download it from [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or use OpenJDK. Additionally, set up your favorite Integrated Development Environment (IDE) such as IntelliJ IDEA or Eclipse.
+Make sure you have Java Development Kit (JDK) installed on your machine. You can download it from [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or use OpenJDK. Additionally, set up your favorite Integrated Development Environment (IDE) such as IntelliJ IDEA or Eclipse or VSCode.
 
-### Introduction to Git and GitHub
-Before diving into Java, it's essential to understand version control. Learn the basics of Git and how to use GitHub to collaborate and manage your code efficiently. Each day, you'll be adding your daily exercises and projects to your GitHub repository.
 
 ## Contributors
 <h2>
