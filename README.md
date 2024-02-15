@@ -38,7 +38,7 @@ Welcome to the Java Programming Tutorial! This comprehensive guide is designed t
    - Handling exceptions gracefully
    - Custom exceptions
 
-## Getting Started
+
 
 ### Setting up your development environment
 Make sure you have Java Development Kit (JDK) installed on your machine. You can download it from [Oracle JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or use OpenJDK. Additionally, set up your favorite Integrated Development Environment (IDE) such as IntelliJ IDEA or Eclipse or VSCode.
