@@ -1,4 +1,3 @@
-package loops;
 
 public class printN{
     public static void main(String[] args) {
