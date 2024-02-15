@@ -2,7 +2,7 @@
 public class RentCar {
 
     public static void main(String[] args) {
-        // Create a RangeRover object
+        // RangeRover object
         Car rangeRover = new Car();
 
         // Add specifications
@@ -14,12 +14,31 @@ public class RentCar {
         rangeRover.setFuelType("Petrol");
         rangeRover.setTransmissionType("Automatic");
         rangeRover.setMileage(12.5);
-        rangeRover.setDailyRate(150.0);
+        rangeRover.setDailyRate(15000.0);
         rangeRover.setAvailabilityStatus(false); // Mark as rented
         rangeRover.setLocation("BranchA");
 
         // Print information in a formatted box
         printCarInfo(rangeRover);
+
+
+        // Audi object
+        Car audi = new Car();
+
+        audi.setID(2);
+        audi.setMake("Audi");
+        audi.setModel("R8");
+        audi.setYear(2022);
+        audi.setType("Sports car");
+        audi.setFuelType("Petrol");
+        audi.setTransmissionType("Manual");
+        audi.setMileage(13.5);
+        audi.setDailyRate(80520);
+        audi.setAvailabilityStatus(true);
+        audi.setLocation("Chandigarh");
+
+        printCarInfo(audi);
+
     }
 
 
