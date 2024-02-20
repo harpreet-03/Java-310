@@ -9,7 +9,7 @@ public class invertedTriangle {
         // }
 
         //2nd
-            
+            //another method : 
         for(int i = 1; i<=n; i++) {
             for(int j = 0; j<n-i+1; j++) {
                 System.out.print("* ");
