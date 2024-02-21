@@ -1,0 +1,38 @@
+Inheritance: 
+
+Inheritance in Java is a fundamental concept of Object-Oriented Programming (OOP) where a class (subclass or child class) can inherit properties and behavior (methods) from another class (superclass or parent class). This allows for code reuse and facilitates the creation of hierarchical relationships between classes.
+
+Types of Inheritance in Java are: 
+
+1. Single level Inheritance:
+
+        class a
+          |
+        class b
+
+2. Multi level Inheritance:
+
+        class a
+            |
+        class b
+            |
+        class c
+
+3. hierarchical Inheritance:
+
+        class a
+            |
+    class b     class c
+
+-> for a single parent, there are  multple childs
+
+
+
+4. MultiPle Inheritance:
+
+    class a    class b
+            |
+          class c 
+
+    
+-> not permitied in Java
