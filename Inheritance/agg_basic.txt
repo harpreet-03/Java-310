@@ -1,0 +1,17 @@
+Aggregation is used to represent relationships where one object "has-a" relationship with another object. It's particularly useful in scenarios where one object is composed of or contains another object, but the contained object can exist independently of the container object.
+
+Here are some common scenarios where aggregation is used:
+
+1. **Employee and Address**: As shown in the previous example, an `Employee` can have an `Address`. The `Address` represents a part of the `Employee`, but it can exist independently and can be shared among multiple employees.
+
+2. **Library and Books**: A `Library` contains many `Books`. Each `Book` can exist independently of the `Library`, and a `Library` can have multiple `Books`.
+
+3. **University and Departments**: A `University` can have multiple `Departments`. Each `Department` can have its own faculty, students, etc., and can exist independently of the `University`.
+
+4. **Car and Engine**: A `Car` has an `Engine`. The `Engine` is part of the `Car`, but it can exist and be replaced independently of the `Car`.
+
+5. **Company and Departments**: Similar to the university example, a `Company` can have multiple `Departments`, and each `Department` can have its own employees, projects, etc.
+
+In these scenarios, aggregation is preferred over composition when the contained object (like `Address`, `Book`, `Department`, `Engine`) can exist independently and can be shared among multiple instances of the container class (`Employee`, `Library`, `University`, `Car`, `Company`).
+
+Using aggregation helps in achieving better code organization, reusability, and maintainability by modeling relationships between objects effectively. It also provides flexibility as the contained object can be replaced or modified without affecting the container object.
