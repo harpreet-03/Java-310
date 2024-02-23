@@ -1,0 +1,41 @@
+In Java, `this()` is a special method used to invoke another constructor of the same class from within a constructor. It is often used to avoid code duplication when multiple constructors in a class share some common initialization logic.
+
+Here's how it works:
+
+1. When you call `this()` inside a constructor, you're essentially calling another constructor of the same class.
+2. This invocation must be the first statement in the constructor.
+3. You can pass arguments to `this()` to select a specific constructor overload.
+4. If you don't explicitly call `this()` or another constructor using `this()`, Java implicitly inserts a call to the no-argument constructor of the superclass (`super()`).
+
+Here's an example to illustrate:
+
+```java
+public class MyClass {
+    private int x;
+    private int y;
+    
+    // Constructor with no arguments
+    public MyClass() {
+        this(0, 0); // Calls the constructor with two arguments
+    }
+    
+    // Constructor with two arguments
+    public MyClass(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    
+    // Other methods of the class...
+    
+    public static void main(String[] args) {
+        MyClass obj1 = new MyClass(); // Calls the no-argument constructor
+        MyClass obj2 = new MyClass(10, 20); // Calls the two-argument constructor
+    }
+}
+```
+
+In this example:
+- The `MyClass()` constructor calls `this(0, 0)`, which in turn invokes the two-argument constructor, initializing `x` and `y` to 0.
+- The `MyClass(int x, int y)` constructor initializes `x` and `y` with the provided arguments.
+
+Using `this()` helps streamline your code by avoiding redundant initialization logic.
