@@ -1,0 +1,54 @@
+Polymorphism in Java is the ability of an object to take on multiple forms. It allows you to treat objects of different classes through a single interface. There are two main types of polymorphism in Java: compile-time polymorphism (also known as method overloading) and runtime polymorphism (also known as method overriding).
+
+1. **Compile-time Polymorphism (Method Overloading):**
+   Method overloading allows a class to have multiple methods with the same name but with different parameters. The compiler determines which method to execute based on the number and type of arguments passed to it.
+
+   Example:
+
+   ```java
+   class Calculator {
+       int add(int a, int b) {
+           return a + b;
+       }
+
+       double add(double a, double b) {
+           return a + b;
+       }
+   }
+   ```
+
+   In this example, there are two `add` methods with different parameter types (`int` and `double`), achieving polymorphism through method overloading.
+
+2. **Runtime Polymorphism (Method Overriding):**
+   Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The subclass method must have the same name, return type, and parameters as the superclass method. The JVM determines which method to execute at runtime based on the actual object type.
+
+   Example:
+
+   ```java
+   class Animal {
+       void sound() {
+           System.out.println("Animal makes a sound");
+       }
+   }
+
+   class Dog extends Animal {
+       void sound() {
+           System.out.println("Dog barks");
+       }
+   }
+   ```
+
+   In this example, `Dog` class overrides the `sound` method of the `Animal` class. When you call `sound()` on a `Dog` object, it executes the `sound` method from the `Dog` class, demonstrating runtime polymorphism.
+
+Polymorphism allows for more flexible and modular code, as it promotes code reuse, simplifies maintenance, and allows for easier extensibility. It's a fundamental concept in object-oriented programming and is extensively used in Java programming.
+
+
+
+Method Overriding :
+
+// if a mthd is defined in both parent and child class, then it will call the mthd of child class, this is called method overriding.
+
+
+Method Overloading: 
+
+// if a mthd is defined in both parent and child class, then it will call the mthd of parent class, this is called method overloading.

@@ -1,0 +1,53 @@
+Certainly! Here's a breakdown of method overriding and overloading in Java, along with examples, presented in points:
+
+**Method Overloading:**
+
+1. **Definition:** Method overloading is a feature that allows a class to have multiple methods with the same name but with different parameters.
+  
+2. **Determined at Compile Time:** The method to be executed is determined by the compiler based on the number and type of arguments passed to it.
+
+3. **Return Type Doesn't Matter:** Overloaded methods can have the same name and different return types, but the return type alone is not sufficient to differentiate methods during compilation.
+
+4. **Examples:**
+
+   ```java
+   class Calculator {
+       int add(int a, int b) {
+           return a + b;
+       }
+
+       double add(double a, double b) {
+           return a + b;
+       }
+   }
+   ```
+
+   In this example, there are two `add` methods with different parameter types (`int` and `double`), achieving method overloading.
+
+**Method Overriding:**
+
+1. **Definition:** Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+
+2. **Determined at Runtime:** The method to be executed is determined by the JVM based on the actual object type at runtime.
+
+3. **Must Have Same Signature:** The overriding method must have the same name, return type, and parameters as the overridden method in the superclass.
+
+4. **Examples:**
+
+   ```java
+   class Animal {
+       void sound() {
+           System.out.println("Animal makes a sound");
+       }
+   }
+
+   class Dog extends Animal {
+       void sound() {
+           System.out.println("Dog barks");
+       }
+   }
+   ```
+
+   In this example, `Dog` class overrides the `sound` method of the `Animal` class. When you call `sound()` on a `Dog` object, it executes the `sound` method from the `Dog` class, demonstrating method overriding.
+
+Both method overloading and overriding are essential features in Java that promote code reuse, enhance readability, and provide flexibility in designing object-oriented systems. They are extensively used in Java programming to achieve polymorphism and dynamic behavior.
