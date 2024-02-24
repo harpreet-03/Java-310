@@ -19,6 +19,7 @@ public class RentCar {
         rangeRover.setLocation("BranchA");
 
         // Print information in a formatted box
+        System.out.println();
         printCarInfo(rangeRover);
 
 
@@ -37,6 +38,7 @@ public class RentCar {
         audi.setAvailabilityStatus(true);
         audi.setLocation("Chandigarh");
 
+        System.out.println();
         printCarInfo(audi);
 
     }
