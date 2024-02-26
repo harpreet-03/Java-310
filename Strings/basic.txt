@@ -5,11 +5,8 @@ In Java, `name` is a reference variable that refers to a string object with the 
 IMP POINTS: 
 
 -> In java, Strings are an object that represents sequence of char values
-
 -> In java, Strings are Immutable
-
 -> Whenever we create a String in Java, the JVM checks the "String Constant Pool" first. If the String already exist in the pool, a refernece to the pool instance is returned.
 If the String doesn't exist, a new String instance is created in the pool.
-
 -> This makes Java Memory efficient bcz no new objects are created if it already exists in the String constant pool.
 
