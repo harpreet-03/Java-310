@@ -1,6 +1,6 @@
 package Java.OOPs.Anonymous_Obj;
 /*
- * n Java, anonymous objects are objects that are instantiated without assigning them to a variable. They are typically used for short-lived objects that are used only once and don't need to be referenced elsewhere in the code.
+ *In Java, anonymous objects are objects that are instantiated without assigning them to a variable. They are typically used for short-lived objects that are used only once and don't need to be referenced elsewhere in the code.
  * 
  * When dealing with anonymous objects in Java, here are some important points to remember:
 

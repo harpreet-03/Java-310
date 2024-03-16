@@ -1,3 +1,10 @@
+
+IMP: 
+
+By deafult, every class in java extends to Object class
+In Java, the `Object` class is the root of all classes. It provides a common superclass for all objects and defines methods for all objects.
+
+
 In Java, `this()` is a special method used to invoke another constructor of the same class from within a constructor. It is often used to avoid code duplication when multiple constructors in a class share some common initialization logic.
 
 Here's how it works:

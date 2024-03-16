@@ -1,0 +1,20 @@
+Sure, here's a simple explanation of early binding and late binding in Java:
+
+**Early Binding:**
+
+- Also known as static binding.
+- Occurs at compile time.
+- The method to be executed is determined based on the type of reference variable.
+- Resolves method calls at compile time.
+- Mostly used in method overloading.
+- Faster performance because the method is already determined at compile time.
+
+**Late Binding:**
+
+- Also known as dynamic binding or runtime polymorphism.
+- Occurs at runtime.
+- The method to be executed is determined based on the type of object.
+- Resolves method calls at runtime.
+- Mostly used in method overriding.
+- Provides more flexibility and extensibility in object-oriented programming.
+- Slightly slower performance compared to early binding due to method resolution at runtime.
