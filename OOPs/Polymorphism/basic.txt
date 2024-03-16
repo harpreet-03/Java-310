@@ -5,7 +5,7 @@ Polymorphism in Java is the ability of an object to take on multiple forms. It a
 
    Example:
 
-   ```java
+  java
    class Calculator {
        int add(int a, int b) {
            return a + b;
@@ -15,7 +15,7 @@ Polymorphism in Java is the ability of an object to take on multiple forms. It a
            return a + b;
        }
    }
-   ```
+   
 
    In this example, there are two `add` methods with different parameter types (`int` and `double`), achieving polymorphism through method overloading.
 
@@ -24,7 +24,7 @@ Polymorphism in Java is the ability of an object to take on multiple forms. It a
 
    Example:
 
-   ```java
+   java
    class Animal {
        void sound() {
            System.out.println("Animal makes a sound");
@@ -36,7 +36,7 @@ Polymorphism in Java is the ability of an object to take on multiple forms. It a
            System.out.println("Dog barks");
        }
    }
-   ```
+  
 
    In this example, `Dog` class overrides the `sound` method of the `Animal` class. When you call `sound()` on a `Dog` object, it executes the `sound` method from the `Dog` class, demonstrating runtime polymorphism.
 
