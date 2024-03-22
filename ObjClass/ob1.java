@@ -15,8 +15,11 @@ class Student{
 
 public class ob1 {
     public static void main(String[] args) {
-        Student obj = new Student(45, "xyz");
+        Student obj = new Student(45, "xyzxy");
 
         System.out.println(obj.toString());
     }
 }
+
+
+
