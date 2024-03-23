@@ -1,3 +1,7 @@
+// Upcasting: In Java, upcasting refers to the process of casting an object to one of its supertypes. 
+
+This means converting an object of a subclass type to an object of a superclass type. Upcasting happens implicitly when the superclass reference is used to refer to a subclass object. It is a safe operation because a subclass object inherently possesses all the characteristics of its superclass.
+
 Inheritance: 
 
 Inheritance in Java is a fundamental concept of Object-Oriented Programming (OOP) where a class (subclass or child class) can inherit properties and behavior (methods) from another class (superclass or parent class). This allows for code reuse and facilitates the creation of hierarchical relationships between classes.
