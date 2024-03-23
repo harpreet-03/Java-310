@@ -1,0 +1,1 @@
+We're not acheiving 100% abstraction because wtihout any abstract methdod creation and only with concrete methods, it's also working completely fine, and their's no compulson seen that in abstract class that abstract method should be there in the abstract class. so that's the reason we're not achieving 100% abstraction.

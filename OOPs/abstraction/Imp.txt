@@ -1,0 +1,109 @@
+
+
+- **Definition**: Abstraction is a fundamental concept in Java and object-oriented programming (OOP) in general. It involves hiding the complex implementation details of a class and exposing only the essential features of an object.
+
+- **Purpose**:
+
+  - **Simplicity**: Abstraction simplifies the programming model by focusing on essential features while hiding unnecessary details.
+
+  - **Encapsulation**: It promotes encapsulation by separating the interface (what the class does) from the implementation (how it achieves it).
+
+  - **Flexibility**: Abstraction allows for easier maintenance and modification of code as changes in implementation details do not affect the code that uses the abstraction.
+
+
+
+
+
+- **Ways to Achieve Abstraction**:
+
+  - **Abstract Classes**: Abstract classes in Java provide a way to create abstraction with the help of abstract methods. Abstract classes cannot be instantiated and may contain abstract as well as concrete methods.
+
+  - **Interfaces**: Interfaces define a contract for what a class can do without specifying how it does it. All methods in interfaces are implicitly abstract and public, and all fields are implicitly public, static, and final.
+
+  - **Abstract Methods**: Abstract methods are declared without implementation in abstract classes or interfaces. Subclasses or implementing classes must provide concrete implementations for these methods.
+
+
+
+
+
+
+
+
+
+
+
+IMP ABOUT ABSTRACTION :
+
+
+// abstract method can only be defined inside an abstract class.
+ It's not compulsory to have abstract methods inside the abstract class.
+
+ // Concrete methods
+    /*
+     * In Java, concrete methods refer to methods that have a complete
+     * implementation and are not declared as abstract. Concrete methods provide the
+     * actual code that performs a specific action within a class. They contrast
+     * with abstract methods, which are declared without an implementation and must
+     * be implemented by subclasses.
+     */
+
+
+    /*
+     * if parent class is an abstract class then a child class must define their
+     * mehtods.
+     * it is compulsory to define the abstract mehtod of parent class int the the
+     * child class
+     * 
+     */
+
+
+
+     // we cannot create Objects of Abstract Class
+
+        //In Java, upcasting refers to the process of casting an object to one of its supertypes.This means converting an object of a subclass type to an object of a superclass type.
+
+
+    
+
+
+
+
+- **Key Concepts**:
+
+  - **Abstract Classes**: Classes declared with the `abstract` keyword that may contain abstract methods. They cannot be instantiated but can be subclassed.
+
+  - **Interfaces**: Interfaces define a set of methods that a class must implement. They provide a way for multiple inheritance and are used to achieve abstraction.
+
+  - **Polymorphism**: Abstraction allows for polymorphism, where a single interface can be implemented by multiple classes, and objects of these classes can be treated interchangeably through a common interface.
+
+  - **Implementation Hiding**: Abstraction hides the internal implementation details of a class from its users, allowing them to interact with the class through its interface only.
+
+  - **Separation of Concerns**: Abstraction enables the separation of concerns by dividing the program into layers of abstraction, each dealing with a specific aspect of functionality.
+
+- **Example**:
+  ```java
+  // Abstract class
+  abstract class Shape {
+      // Abstract method
+      public abstract void draw();
+  }
+
+  // Concrete subclass implementing the abstract method
+  class Circle extends Shape {
+      @Override
+      public void draw() {
+          System.out.println("Drawing a circle");
+      }
+  }
+
+  // Main method demonstrating abstraction
+  public class Main {
+      public static void main(String[] args) {
+          Shape shape = new Circle(); // Upcasting to Shape
+          shape.draw(); // Polymorphic call to the draw method
+      }
+  }
+  ```
+
+In this example, `Shape` is an abstract class defining an abstract method `draw()`. The `Circle` class extends `Shape` and provides a concrete implementation of the `draw()` method. Through abstraction, we can treat `Circle` objects polymorphically as `Shape` objects, allowing for flexibility and modularity in the code.
+
