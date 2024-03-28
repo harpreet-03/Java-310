@@ -1,0 +1,49 @@
+- Resizable-array implementation of the List interface.
+- Methods like size, isEmpty, get, set, iterator, and listIterator operate in constant time.
+- Amortized constant time for adding elements, O(n) time for adding n elements.
+- Capacity grows automatically as elements are added.
+- Capacity is at least as large as the list size.
+- Growth policy not specified beyond constant amortized time cost for adding elements.
+- Use `ensureCapacity` to increase capacity before adding a large number of elements.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Capacity:
+
+-Refers to the total number of elements that the list can currently hold without needing to resize its internal array.
+
+-Represents the physical space allocated for storing elements.
+
+-Initially set to some default value or provided by the user, but it grows automatically as elements are added.
+
+
+
+Size:
+
+-Represents the actual number of elements present in the list.
+
+-Reflects the logical count of elements in the list.
+
+-Initially set to 0 and increases or decreases as elements are added or removed from the list.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+The reason ArrayList typically uses wrapper classes or objects instead of primitive data types is because ArrayList is designed to hold objects, not primitives. 
+
+- **Generics**: ArrayList uses generics to specify the type of elements it contains. Generics do not support primitive types directly, so wrapper classes are used to wrap primitive types into objects, allowing them to be used with ArrayList.
+
+- **Object-Oriented Design**: In Java, everything is an object, including primitive types, when they are wrapped in their corresponding wrapper classes. This aligns with the object-oriented design principles of Java.
+
+- **Flexibility**: Using wrapper classes allows ArrayList to hold any type of object, including primitives, strings, and custom objects. This provides flexibility and consistency in the way elements are stored and accessed in the list.
+
+- **Autoboxing and Unboxing**: Java automatically performs autoboxing and unboxing, converting between primitive types and their corresponding wrapper classes when needed. This makes it convenient to work with both primitives and objects in ArrayList without explicit conversions.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,69 @@
+ArrayList:
+
+Usage: Dynamic array implementation, good for random access.
+Advantage: Fast retrieval of elements by index.
+Disadvantage: Slower insertion and deletion compared to LinkedList.
+Methods:
+add(E element): O(1) amortized, but O(n) if resizing is required.
+get(int index): O(1).
+remove(int index): O(n).
+contains(Object o): O(n).
+
+
+LinkedList:
+
+Usage: Doubly linked list implementation, suitable for frequent insertion/deletion.
+Advantage: Efficient insertion and deletion operations.
+Disadvantage: Slower access time for random elements compared to ArrayList.
+Methods:
+add(E element): O(1).
+get(int index): O(n).
+remove(int index): O(n).
+contains(Object o): O(n).
+
+
+HashMap:
+
+Usage: Stores key-value pairs, provides fast retrieval based on keys.
+Advantage: Constant-time performance for get() and put() operations.
+Disadvantage: Unordered collection, iteration order not guaranteed.
+Methods:
+put(K key, V value): O(1) average case, O(n) worst case.
+get(K key): O(1) average case, O(n) worst case.
+remove(K key): O(1) average case, O(n) worst case.
+containsKey(K key): O(1) average case, O(n) worst case.
+
+
+TreeMap:
+
+Usage: Implements SortedMap interface using a Red-Black tree, maintains elements in sorted order.
+Advantage: Sorted order iteration of keys.
+Disadvantage: Slower insertion and removal compared to HashMap.
+
+
+
+HashSet:
+
+Usage: Implements Set interface, stores unique elements.
+Advantage: Constant-time performance for add(), remove(), and contains() operations.
+Disadvantage: Unordered collection, iteration order not guaranteed.
+
+
+
+TreeSet:
+
+Usage: Implements SortedSet interface using a Red-Black tree, maintains elements in sorted order.
+Advantage: Sorted order iteration of elements.
+Disadvantage: Slower insertion and removal compared to HashSet.
+Methods:
+add(E element): O(log n).
+remove(E element): O(log n).
+contains(E element): O(log n).
+size(): O(1).
+
+
+LinkedHashMap:
+
+Usage: HashMap with predictable iteration order, maintains insertion order.
+Advantage: Retains order of insertion while providing fast access.
+Disadvantage: Slightly slower than HashMap due to additional bookkeeping for maintaining order.
