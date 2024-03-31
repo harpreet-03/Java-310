@@ -1,4 +1,5 @@
-Great! Here's the implementation in bullet points:
+Here's the Implementation Blueprint for Car Rental System:
+
 
 **Car:**
 - Private attributes: ID, make, model, year, type, fuel type, transmission type, mileage, daily rate, availability status, location.
@@ -11,6 +12,7 @@ Great! Here's the implementation in bullet points:
 
 **Customer:**
 - Private attributes: ID, name, address, phone number, driver's license number, rental history.
+
 - Public methods:
   - Constructors: Default, custom.
   - Getters and setters for all attributes.
