@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/** Product System - OOPs Implementation */
 class Product {
     private int productId;
     private String name;
@@ -97,6 +97,7 @@ class Inventory {
             product.setQuantity(newQuantity);
         }
     }
+
 
     // Correct the display method to iterate over all products
     public void display() {
