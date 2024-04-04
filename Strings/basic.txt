@@ -2,7 +2,13 @@ BASICS OF STRING IN Java
 
 String name = "Hello World"
 
-In Java, `name` is a reference variable that refers to a string object with the value "Hello World". It's important to understand that in Java, objects are manipulated through references. So when you declare `String name = "Hello World";`, you're creating a string object with the value "Hello World" and `name` is referencing that object. This means `name` doesn't hold the actual string value, but rather a reference to where that value is stored in memory.
+In Java, `name` is a reference variable that refers to a string object with the value "Hello World". 
+
+It's important to understand that in Java, objects are manipulated through references.
+
+So when you declare `String name = "Hello World";` , you're creating a string object with the value "Hello World" and `name` is referencing that object.
+
+This means `name` doesn't hold the actual string value, but rather a reference to where that value is stored in memory.
 
 IMP POINTS: 
 
