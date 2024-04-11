@@ -42,9 +42,9 @@ public class Employeee {
     public static void main(String[] args) {
         Employee e1 = new Employee(101, "Harpreet Singh", 5000.78);
 
-        System.out.println("Id: " + e1.getEmployeeId());
-        System.out.println("Name: " + e1.getEmployeeName());
-        System.out.println("Salary: " + e1.getFormattedSalary());
+        System.out.println("Id of Employee:  " + e1.getEmployeeId());
+        System.out.println("Name of Employee: " + e1.getEmployeeName());
+        System.out.println("Salary of Employee: " + e1.getFormattedSalary());
 
     }
 }
