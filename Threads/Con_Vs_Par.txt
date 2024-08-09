@@ -1,0 +1,21 @@
+Concurrency:
+------------
+
+- Concurrency refers to the ability of a system to handle multiple tasks or processes simultaneously. 
+- It focuses on managing multiple tasks at once, which may or may not be executing at the same time. 
+- Concurrency is more about the structure of a program and how it handles multiple tasks that could be in progress at the same time.
+
+
+Example: 
+
+If you have a web server that handles multiple incoming requests, it’s using concurrency to manage and respond to those requests, even if it’s not running all of them at exactly the same time.
+
+Parallelism:
+------------
+
+- Parallelism refers to the simultaneous execution of multiple tasks or processes. 
+- It involves breaking a problem into smaller parts that can be processed concurrently to achieve faster execution. - Parallelism focuses on performing multiple operations at the exact same time.
+
+Example: 
+
+If you have a multi-core processor and you run a task that can be divided into independent subtasks, those subtasks can be executed in parallel across different cores to speed up processing.

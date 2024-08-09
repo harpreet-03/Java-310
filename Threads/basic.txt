@@ -1,1 +1,46 @@
-Threads in Java 
+Thread in Java :
+----------------
+
+1. creating Thread :
+
+ - by extending thread class
+ - by implementing runnable interface
+
+
+**Note: 
+-------
+
+- More memory is required while extending the Thread class because each thread creates a unique object.
+- Less memory is required while implementing Runnable because multiple threads share the same object.
+
+Flow Of Control In Java :
+--------------------------
+
+ 1. Without threading :
+ 
+class ThreadExample{
+    public static void main(String[] args) {
+        Func1();
+        Func2();
+    }
+}
+
+In the above code, you can see that Func1() and Func2() are called inside the main() function. But the execution of Func2() will start only after the completion of the Func1().
+
+
+  2. With threading :
+
+class Multi extends Thread{  
+public void run(){  
+    System.out.println("thread is running...");  
+}  
+public static void main(String args[]){  
+    Multi func1=new Multi();  
+    func1.start();  
+    Multi func2=new Multi();  
+    func2.start();  
+ }  
+}  
+
+Again, Func1() and Func2() are called inside the main function, but none of the two functions is waiting for the execution of the other function. Both the functions are getting executed concurrently.
+
