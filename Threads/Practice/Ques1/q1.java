@@ -1,4 +1,4 @@
-package Ques1;
+
 /*
  * ques:
  * 
@@ -8,6 +8,7 @@ package Ques1;
 
 class GM extends Thread {
     public void run() {
+        
         System.out.println("Good Morning.");
     }
 }
