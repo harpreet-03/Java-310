@@ -8,8 +8,7 @@ public class throww {
             throw new ArithmeticException("Div by 0");
                }
           else{
-                  return a/b ;
+                  System.out.println(a/b) ;
               }
     }
-
 }
