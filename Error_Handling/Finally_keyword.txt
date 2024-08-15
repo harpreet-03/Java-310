@@ -1,0 +1,12 @@
+Finally Block in Java & Why is it needed!
+
+
+1. Java finally block:
+----------------------
+
+
+-Finally block contains the code which is always executed whether the exception is handled or not.
+
+- It is used to exception is handled or not.
+
+- It is used to execute code containing instructions to release the system resources, close a connection etc.
