@@ -1,0 +1,34 @@
+Lambda Expressions :
+-------------------
+
+- Lambda expressions were introduced in Java 8.
+- They are similar to methods, but they don't need a name.
+
+Syntax :
+
+(parameter1, parameter2) -> { code to be executed }
+
+
+Take a look at the example given below :
+----------------------------------------
+
+@FunctionalInterface
+interface LambaExp{
+    void meth1(int a, int b);
+}
+
+class LambaExpDemo{
+    public static void main(String[] args) {
+
+        LambaExp obj =(a,b)->{
+            System.out.println("The value of a and b is : "+ a + "," + b);
+        };
+        obj.meth1(5,10);
+    }
+}
+
+
+Output :
+-------
+
+The value of a and b is : 5,10

@@ -1,0 +1,30 @@
+Java Anonymous Classes & Lambda Expressions:
+--------------------------------------------
+
+- Anonymous class is nothing but a class without any name.
+- They are used to override a class method or interface.
+- Anonymous classes in Java help us to write more concise and readable code.
+
+Syntax:
+-------
+
+// Demo can be interface or abstract class.
+Demo t = new Demol() 
+{
+   // data members and methods
+   public void Demo_method() 
+   {
+      ........
+      ........
+    }   
+};
+
+
+Ways to create an Anonymous Java class :
+----------------------------------------
+
+The Anonymous class in Java can be created by two ways :
+
+1. By extending a class
+2. By implementing an interface
+
